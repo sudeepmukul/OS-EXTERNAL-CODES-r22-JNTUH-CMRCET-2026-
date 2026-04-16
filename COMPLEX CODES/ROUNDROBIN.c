@@ -33,9 +33,11 @@ int main()
             {
                 done = 0;
 
+
+
                 if(rem_bt[i] > t)
                 {
-                    time += t;
+                    time = time + t;
                     rem_bt[i] -= t;
                 }
                 else

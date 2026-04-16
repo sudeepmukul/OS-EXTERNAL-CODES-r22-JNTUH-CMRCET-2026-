@@ -18,7 +18,7 @@ int main() {
     // Send message
     m.type = 1;
     printf("Enter String to Send");
-    fgets(m.text, sizeof(m.text), stdin);    
+    fgets(m.text, 50 , din);    
     msgsnd(msgid, &m, sizeof(m.text), 0);
 
     // Receive message

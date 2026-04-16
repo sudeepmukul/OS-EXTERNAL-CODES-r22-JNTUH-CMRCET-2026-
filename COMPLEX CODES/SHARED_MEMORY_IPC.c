@@ -15,7 +15,7 @@ int main() {
 
     // Write data
     printf("Enter message: ");
-    fgets(ptr, 50, stdin);
+    fgets(ptr, 500, stdin);
     // Read data
     printf("Data in shared memory: %s\n", ptr);
 
@@ -24,6 +24,6 @@ int main() {
 
     // Delete shared memory
     shmctl(shmid, IPC_RMID, NULL);
-
+    printf(ptr)
     return 0;
 }

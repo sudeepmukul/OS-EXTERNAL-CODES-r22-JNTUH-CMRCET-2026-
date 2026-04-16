@@ -2,15 +2,15 @@
 
 int main()
 {
-    int segCount, i;
+    int n, i;
     int base[10], limit[10];
 
     // Input number of segments
     printf("Enter number of segments: ");
-    scanf("%d", &segCount);
+    scanf("%d", &n);
 
     // Input base and limit for each segment
-    for(i = 0; i < segCount; i++)
+    for(i = 0; i < n; i++)
     {
         printf("Enter base address of segment %d: ", i);
         scanf("%d", &base[i]);

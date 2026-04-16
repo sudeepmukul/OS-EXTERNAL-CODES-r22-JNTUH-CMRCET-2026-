@@ -8,9 +8,9 @@ int main()
     char msg[50];
     char buffer[50];
     printf("Enter Message: ");
-    fgets(msg,50,stdin);
+    fgets(msg,100,stdin); //scanf
     pipe(fd);   // create pipe
-
+// one end read =========buffer=Farhan ======== one end write
     if(fork() == 0)
     {
         // Child process
